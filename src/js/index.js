@@ -1,4 +1,4 @@
 function foo() {
-    alert('bar');
+    console.log('bar');
 }
 foo();

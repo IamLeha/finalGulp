@@ -1,4 +1,8 @@
-@import './color';
+@import './base/normalize';
+@import './base/color';
+@import './base/typography';
+@import './vendors/mixin';
+//@import './pages/'
 
 h1{
     color: $red;
