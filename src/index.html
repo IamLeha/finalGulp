@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,75 @@
     <link rel="stylesheet" href="css/style.css">
     <title>landings-gulp</title>
 </head>
+
 <body>
     index
     <partial src="header.html"></partial>
     <partial src="main.html"></partial>
+
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
+            data-src="./img/02-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/03-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/04-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/05-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/06-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/08-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/09-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/11-277x360.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/blog-3-891x657.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/blog-4-891x657.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/blog-5-891x657.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/cms-banner-1.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/cms-banner-2.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/main-banner-2-1903x780.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/sub-banner-1.jpg" alt=""></div>
+    <div class="parent"><img class="lazy"
+            src="data:image/gif;base64,R0lGODlhBwAFAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAUAAAIFjI+puwUAOw=="
+            data-src="./img/sub-banner-2.jpg" alt=""></div>
+
     <partial src="footer.html"></partial>
 
     <a href="test.html">test</a>
     <a href="index.html">index</a>
 
     <script src="js/all.js"></script>
+    <script src="js/lazyload.min.js"></script>
+    
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy"
+            // ... more custom settings?
+        });
+    </script>
 </body>
+
 </html>

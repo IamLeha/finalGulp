@@ -16,9 +16,9 @@
     "gulp-html-partial": "^1.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^2.0.2",
-    "gulp-imagemin": "^5.0.3",
     "gulp-js-import": "^1.0.6",
     "gulp-sass": "^4.0.2",
+    "gulp-smushit": "^1.2.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "node-sass": "^4.11.0"

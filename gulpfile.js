@@ -6,7 +6,7 @@ const htmlmin = require('gulp-htmlmin');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+const smushit = require('gulp-smushit');
 const concat = require('gulp-concat');
 const jsImport = require('gulp-js-import');
 const sourcemaps = require('gulp-sourcemaps');
@@ -59,11 +59,19 @@ function js() {
         .pipe(gulp.dest('dist/js'));
 }
 
-function img() {
+/*function img() {
     return gulp.src('src/img/*')
         .pipe(gulpIf(isProd, imagemin()))
         .pipe(gulp.dest('dist/img/'));
+}*/
+
+
+function img() {
+    return gulp.src('src/**/*.{jpg,png}')
+        .pipe(smushit())
+        .pipe(gulp.dest('dist/'));
 }
+
 
 function serve() {
     browserSync.init({
@@ -81,7 +89,7 @@ function watchFiles() {
     gulp.watch('src/**/*.html', gulp.series(html, browserSyncReload));
     gulp.watch('src/**/*.scss', gulp.series(css, browserSyncReload));
     gulp.watch('src/**/*.js', gulp.series(js, browserSyncReload));
-    gulp.watch('src/assets/img/**/*.*', gulp.series(img));
+    gulp.watch('src/img/**/*.*', gulp.series(img));
 
     return;
 }

@@ -7,3 +7,17 @@
 h1{
     color: $red;
 }
+
+.parent {
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+
+
+.parent img {
+    width: 100%;
+    display: block;
+    background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+}
